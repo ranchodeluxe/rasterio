@@ -208,6 +208,7 @@ class Env:
             self.session = DummySession()
 
         self.options = options.copy()
+        self.options.update({'session': self.session})
         self.context_options = {}
 
     @classmethod
